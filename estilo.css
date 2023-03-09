@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #dedede;
+  font-family: "Neo Sans Pro", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  column-gap: 48px;
+  list-style-type: none;
+  color: #555555;
+  line-height: 24px;
+}
+
+@media (max-width: 500px) {
+  nav ul {
+    display: none;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  height: 88.23px;
+  width: 100%;
+}
+
+#logotipo {
+  padding-left: 153px;
+}
+
+.item-ativo {
+  color: #d14b8f;
+  position: relative;
+}
+
+.item-ativo:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+  width: 32px;
+  height: 2px;
+  background-color: #d14b8f;
+}
+#container {
+  display: flex;
+  column-gap: 42px;
+  margin-right: 152px;
+}
+#container img {
+  height: 56px;
+  width: 56px;
+  cursor: pointer;
+}
+@media (max-width: 1080px) {
+  #container {
+    margin-right: 90px;
+  }
+}
+nav ul li {
+  cursor: pointer;
+}
+
+#filtros {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin-left: 161px;
+  margin-top: 38.77px;
+}
+
+#filtros :first-child {
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+#segundo {
+  color: #333;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  margin-top: 16px;
+}
+
+.input-radio {
+  width: 16px;
+  height: 16px;
+  margin-right: 13.72px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+}
+
+main {
+  display: flex;
+}
+
+#encontrados :first-child {
+  font-weight: 700;
+}
+
+#encontrados {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 21.6px;
+  margin-top: 38.77px;
+}
+
+#card {
+  width: 256px;
+  height: 333px;
+  background-color: #ffffff;
+  margin-top: 32px;
+  padding: 9.76px 23.23px 21.49px 9.73px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 9.73384px 14.6008px rgba(0, 0, 0, 0.1);
+}
+
+#produtos {
+  margin-left: 80px;
+}
+
+#cabecalho {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#mascara {
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  top: 131px;
+  left: 187px;
+}
+
+#titulo {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+  text-align: center;
+  margin: 18px 0px;
+}
+
+#desconto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5.35px;
+}
+
+#desconto :first-child {
+  color: #888;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 15.57px;
+  text-decoration: line-through;
+}
+
+#desconto :last-child {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  background-color: #f79552;
+  color: #ffffff;
+  padding: 0px 5px;
+}
+
+#socio {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 6.81px;
+  margin: 7px 0px 9.73px;
+}
+
+#socio :first-child {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 9.73px;
+  text-transform: uppercase;
+}
+
+#socio :last-child {
+  color: #b6116e;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 27.25px;
+}
+
+#socio :last-child #number {
+  font-size: 23px;
+}
+
+#sub {
+  color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.4px;
+  text-transform: uppercase;
+}
+
+.botao {
+  width: 288.94px;
+  height: 39.36px;
+  background-color: #7ebc43;
+  color: #ffffff;
+  border-radius: 3.89px;
+  border: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 16px;
+  cursor: pointer;
+  transition-duration: 500ms;
+}
+
+.botao:hover {
+  background-color: #7dbc43ad;
+  transition-duration: 500ms;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 32px;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 26px;
+  font-family: "Lato", sans-serif;
+  column-gap: 8px;
+  color: #b6116e;
+}
+
+.botao-quadrado {
+  border: 1px solid #b6116e;
+  border-radius: 3px;
+  width: 38px;
+  height: 38px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+#footer-2 {
+  width: 73px;
+}
+
+#footer :first-child {
+  background-color: #b6116e;
+  color: #ffffff;
+}
